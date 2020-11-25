@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="theme-next pisces" lang="zh-Hans">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta name="generator" content="Hexo 3.8.0" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" /> 
+  <meta name="theme-color" content="#222" /> 
+  <meta http-equiv="Cache-Control" content="no-transform" /> 
+  <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+  <link href="./DIYgod_files/css/css" rel="stylesheet" type="text/css" /> 
+  <link href="./DIYgod_files/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> 
+  <link href="./DIYgod_files/css/share.min.css" rel="stylesheet" type="text/css" /> 
+  <link href="./DIYgod_files/css/main.css" rel="stylesheet" type="text/css" /> 
+  <link rel="apple-touch-icon" sizes="180x180" href="https://diygod.me/images/DIYgod-180x180.jpg?v=0.0.37" /> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./DIYgod_files/images/favicon.ico" /> 
+  <link rel="mask-icon" href="https://diygod.me/images/DIYgod.jpg?v=0.0.37" color="#222" /> 
+  <meta name="keywords" content="DIYgod,blog" /> 
+  <link rel="alternate" href="https://diygod.me/atom.xml" title="Hi, DIYgod" type="application/atom+xml" /> 
+  <meta name="description" content="人气网红 | 前端萌新 | 有猫 | 开源" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:title" content="Hi, DIYgod" /> 
+  <meta property="og:url" content="https://diygod.me/index.html" /> 
+  <meta property="og:site_name" content="Hi, DIYgod" /> 
+  <meta property="og:description" content="人气网红 | 前端萌新 | 有猫 | 开源" /> 
+  <meta property="og:locale" content="zh-Hans" /> 
+  <meta name="twitter:card" content="summary" /> 
+  <meta name="twitter:title" content="Hi, DIYgod" /> 
+  <meta name="twitter:description" content="人气网红 | 前端萌新 | 有猫 | 开源" /> 
+  <script async="" src="./DIYgod_files/js/analytics.js">
+</script> 
+  <script type="text/javascript" id="hexo.configurations">
+  var NexT=window.NexT||{},
+  CONFIG={root:"/",scheme:"Pisces",
+  version:"0.0.37",
+
+sidebar:{
+  position:"right",display:"always",
+  offset:52,b2t:!1,scrollpercent:!1,onmobile:!1},
+  fancybox:!1,tabs:!0,
+  motion:{
+    enable:!1,
+    async:!1,
+    transition:{
+      post_block:"fadeIn",
+      post_header:"slideDownIn",
+      post_body:"slideDownIn",
+      coll_header:"slideLeftIn",
+      sidebar:"slideUpIn"
+      }
+    },
+  since:"2/9/2014 11:30:00",
+  onlineAPI:"wss://api.diygod.me/online/",
+  site:{
+    title:"Hi, DIYgod",
+    subtitle:"",
+    author:"DIYgod"
+    },
+  duoshuo:{userId:"0",author:"博主"},
+  algolia:{
+  applicationID:"",
+  apiKey:"",
+  indexName:"",
+  hits:{per_page:10},
+  labels:{
+    input_placeholder:"Search for Posts",
+    hits_empty:"We didn't find any results for the search: ${query}",
+    hits_stats:"${hits} results found in ${time} ms"
+    }
+  },
+leancloud:{
+  enable:!0,
+  appID:"Ti5mwFDXXbpWqeWdaydLNfOS-gzGzoHsz",
+  appKey:"rXpryRyVs5jlk2LAGGI1bfEd"
+  },
+  
+favicon:{
+visibilitychange:!0,
+narmal:"./DIYgod_files/images/favicon.ico",
+hidden:"./DIYgod_files/images/failure.ico",
+show_text:"(/≧▽≦/)咦！又好了！",
+hide_text:"(●—●)喔哟，崩溃啦！"}}
+</script> 
+  <script type="text/javascript" src="./DIYgod_files/js/jquery.min.js"></script> 
+  <script type="text/javascript" src="./DIYgod_files/js/disqus.js">
+</script>
+  <link rel="canonical" href="https://diygod.me/" /> 
+  <title>Hi, DIYgod</title> 
+  <style type="text/css">.noties {
+  position: fixed;
+  max-width: 80%;
+  z-index: 9999
+}
+
+.noties:empty {
+  display: none
+}
+
+.noties-top-right {
+  right: 0;
+  top: 20px
+}
+
+.noties-top-right .notie {
+  -ms-transform: translateX(100%);
+      transform: translateX(100%)
+}
+
+.noties-top-right .notie.notie-shown {
+  -ms-transform: translateX(-20px);
+      transform: translateX(-20px)
+}
+
+.noties-top-left {
+  left: 0;
+  top: 20px
+}
+
+.noties-top-left .notie {
+  -ms-transform: translateX(-100%);
+      transform: translateX(-100%)
+}
+
+.noties-top-left .notie.notie-shown {
+  -ms-transform: translateX(20px);
+      transform: translateX(20px)
+}
+
+.noties-bottom-right {
+  right: 0;
+  bottom: 20px
+}
+
+.noties-bottom-right .notie {
+  -ms-transform: translateX(100%);
+      transform: translateX(100%)
+}
+
+.noties-bottom-right .notie.notie-shown {
+  -ms-transform: translateX(-20px);
+      transform: translateX(-20px)
+}
+
+.noties-bottom-left {
+  left: 0;
+  bottom: 20px
+}
+
+.noties-bottom-left .notie {
+  -ms-transform: translateX(-100%);
+      transform: translateX(-100%)
+}
+
+.noties-bottom-left .notie.notie-shown {
+  -ms-transform: translateX(20px);
+      transform: translateX(20px)
+}
+
+.noties-top-center {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  top: 0
+}
+
+.noties-top-center .notie {
+  -ms-transform: translateY(-100%);
+      transform: translateY(-100%)
+}
+
+.noties-top-center .notie.notie-shown {
+  -ms-transform: translateY(20px);
+      transform: translateY(20px)
+}
+
+.noties-bottom-center {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  bottom: 0
+}
+
+.noties-bottom-center .notie {
+  -ms-transform: translateY(100%);
+      transform: translateY(100%)
+}
+
+.noties-bottom-center .notie.notie-shown {
+  -ms-transform: translateY(-20px);
+      transform: translateY(-20px)
+}
+
+.notie {
+  background-color: #ddd;
+  opacity: 0;
+  transition: transform .3s, opacity .3s;
+  border: 1px solid #ddd;
+  font: 14px/1.4 Helvetica, serif;
+  word-wrap: break-word
+}
+
+.notie:not(:last-child) {
+  margin-bottom: 10px
+}
+
+.notie.notie-auto-hide-disabled {
+  cursor: pointer
+}
+
+.notie.notie-shown {
+  opacity: 1
+}
+
+.notie .notie-body {
+  padding: 10px 12px
+}
+
+.notie .notie-svg {
+  height: 23px;
+  display: block;
+  float: left
+}
+
+.notie .notie-text {
+  display: block;
+  padding-left: 30px;
+  padding-top: 2px
+}
+
+.notie svg {
+  height: 23px;
+  width: 23px
+}
+
+.notie.notie-info {
+  background-color: #C6E4F4;
+  border-color: #A9D3EB;
+  color: #477DAC;
+
+  a {
+    color: #477DAC
+  }
+}
+
+.notie.notie-error {
+  background-color: #EAC1BD;
+  border-color: #D7A9A6;
+  color: #AB2925;
+
+  a {
+    color: #AB2925
+  }
+}
+
+.notie.notie-success {
+  background-color: #D9F1CF;
+  border-color: #C8E1BF;
+  color: #748C6C;
+
+  a {
+    color: #748C6C
+  }
+}
+
+.notie.notie-warning {
+  background-color: #F7F2CF;
+  border-color: #E8E2B2;
+  color: #9C7D45;
+
+  a {
+    color: #9C7D45
+  }
+}
+</style> 
+ </head> 
+ <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans" class="theme-mai"> 
+  <div class="container sidebar-position-right page-home"> 
+   <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader"> 
+    <div class="header-inner"> 
+     <nav class="site-nav head-animated headroom--not-bottom headroom--not-top slideUp"> 
+      <ul id="menu" class="menu"> 
+       <li class="menu-item menu-item-首页"> <a href="https://diygod.me/" rel="section"> <i class="menu-item-icon fa fa-fw fa-home"> </i> <br />首页</a> </li> 
+       <li class="menu-item menu-item-抓到我"> <a href="javascript:;" rel="section"> <i class="menu-item-icon fa fa-fw fa-sign-language"> </i> <br />抓到我</a> 
+        <ul class="submenu submenu-抓到我"> 
+         <li class="submenu-item submenu-item-github"> <a href="https://github.com/DIYgod" rel="section" target="_blank">GitHub</a> </li> 
+         <li class="submenu-item submenu-item-twitter"> <a href="https://twitter.com/DIYgod" rel="section" target="_blank">Twitter</a> </li> 
+         <li class="submenu-item submenu-item-qq-群"> <a href="https://diygod.me/images/qq-g.jpg" rel="section" target="_blank">QQ 群</a> </li> 
+         <li class="submenu-item submenu-item-telegram-频道"> <a href="https://t.me/awesomeDIYgod" rel="section" target="_blank">Telegram 频道</a> </li> 
+         <li class="submenu-item submenu-item-telegram-群"> <a href="https://t.me/prpr233" rel="section" target="_blank">Telegram 群</a> </li> 
+        </ul> </li> 
+       <li class="menu-item menu-item-实验室"> <a href="javascript:;" rel="section"> <i class="menu-item-icon fa fa-fw fa-flask"> </i> <br />实验室</a> 
+        <ul class="submenu submenu-实验室" style=""> 
+         <li class="submenu-item submenu-item-rsshub"> <a href="https://docs.rsshub.app/" rel="section" target="_blank">RSSHub</a> </li> 
+         <li class="submenu-item submenu-item-dplayer"> <a href="http://dplayer.js.org/" rel="section" target="_blank">DPlayer</a> </li> 
+         <li class="submenu-item submenu-item-aplayer"> <a href="https://aplayer.js.org/" rel="section" target="_blank">APlayer</a> </li> 
+         <li class="submenu-item submenu-item-oneindex"> <a href="https://pan.prprpr.me/" rel="section" target="_blank">Oneindex</a> </li> 
+         <li class="submenu-item submenu-item-tt-rss"> <a href="https://rss.diygod.me/" rel="section" target="_blank">TT RSS</a> </li> 
+         <li class="submenu-item submenu-item-监控"> <a href="https://status.diygod.me/" rel="section" target="_blank">监控</a> </li> 
+         <li class="submenu-item submenu-item-nas"> <a href="https://nas.diygod.me:2222/" rel="section" target="_blank">NAS</a> </li> 
+        </ul> </li> 
+       <li class="menu-item menu-item-归档"> <a href="https://diygod.me/archives/" rel="section"> <i class="menu-item-icon fa fa-fw fa-archive"> </i> <br />归档</a> </li> 
+       <li class="menu-item menu-item-投喂"> <a href="https://diygod.me/donate/" rel="section"> <i class="menu-item-icon fa fa-fw fa-cutlery"> </i> <br />投喂</a> </li> 
+       <li class="menu-item menu-item-后宫"> <a href="https://diygod.me/friends/" rel="section"> <i class="menu-item-icon fa fa-fw fa-mars"> </i> <br />后宫</a> </li> 
+       <li class="menu-item menu-item-留言板"> <a href="https://diygod.me/message/" rel="section"> <i class="menu-item-icon fa fa-fw fa-pencil"> </i> <br />留言板</a> </li> 
+       <li class="menu-item search"> 
+        <form class="search-form"> 
+         <input name="keyword" type="text" class="search-input" placeholder="站内搜索" /> 
+         <button type="submit" class="search-submit"> <i class="fa fa-search"> </i> </button> 
+        </form> </li> 
+       <li class="menu-item online"> <span id="online-count">6544</span>人在线</li> 
+      </ul> 
+     </nav> 
+     <div class="site-brand-wrapper" style="background-image:url(./DIYgod_files/images/header-sagiri.jpg)"> 
+      <div class="site-meta"> 
+       <div class="custom-logo-site-title"> 
+        <div class="brand"> 
+         <span class="logo-line-before"> <i> </i> </span> 
+         <div class="site-title"> 
+          <div id="animate" class="animate" style="font-size: 100px; height: 100px; line-height: 100px;"> 
+           <span style="left: 354.672px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">H</span> 
+           <span style="left: 447.672px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">i</span> 
+           <span style="left: 488.766px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">,</span> 
+           <span style="left: 529.656px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"> </span> 
+           <span style="left: 555.453px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">D</span> 
+           <span style="left: 641.25px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">I</span> 
+           <span style="left: 689.25px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Y</span> 
+           <span style="left: 771.141px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">g</span> 
+           <span style="left: 843.734px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">o</span> 
+           <span style="left: 919.234px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">d</span> 
+          </div> 
+          <div id="guide" class="guide" style="font-size: 100px; height: 100px; line-height: 100px;"> 
+           <span>H</span> 
+           <span>i</span> 
+           <span>,</span> 
+           <span> </span> 
+           <span>D</span> 
+           <span>I</span> 
+           <span>Y</span> 
+           <span>g</span> 
+           <span>o</span> 
+           <span>d</span> 
+          </div> 
+         </div> 
+         <span class="logo-line-after"> <i> </i> </span> 
+        </div> 
+       </div> 
+       <p class="site-subtitle"> </p> 
+      </div> 
+      <div class="site-nav-toggle"> 
+       <button> <span class="btn-bar"> </span> <span class="btn-bar"> </span> <span class="btn-bar"> </span> </button> 
+      </div> 
+     </div> 
+     <div class="site-master" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> 
+      <img class="site-master-avatar" itemprop="image" src="./DIYgod_files/images/DIYgod.jpg" alt="DIYgod">
+      <h2 class="site-master-description" itemprop="description"> <span>写代码是热爱，</span> <span>写到世界充满爱！</span> </h2> 
+     </div> 
+    </div> 
+   </header> 
+   <main id="main" class="main"> 
+    <div class="main-inner"> 
+     <div class="content-wrap"> 
+      <div id="content" class="content"> 
+       <section id="posts" class="posts-expand"> 
+        <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article"> 
+         <div class="post-date"> 
+          <div class="post-month">
+           12月
+          </div> 
+          <div class="post-day">
+           31
+          </div> 
+         </div> 
+         <div class="post-badge"> 
+          <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"> <a href="https://diygod.me/categories/%E6%97%A5%E8%AE%B0%E6%9C%AC/" itemprop="url" rel="index"> <span itemprop="name">日记本</span> </a> </span> 
+         </div> 
+         <div class="post-block"> 
+          <link itemprop="mainEntityOfPage" href="https://diygod.me/2018/" /> 
+          <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> 
+           <meta itemprop="name" content="DIYgod" /> 
+           <meta itemprop="description" content="" /> 
+           <meta itemprop="image" content="./DIYgod_files/images/DIYgod.jpg" /> </span> 
+          <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"> 
+           <meta itemprop="name" content="Hi, DIYgod" /> </span> 
+          <header class="post-header"> 
+           <h1 class="post-title" itemprop="name headline"> <a class="post-title-link" href="https://diygod.me/2018/" itemprop="url">2018 年终总结</a> </h1> 
+           <div class="post-meta"> 
+            <span class="post-time"> <span class="post-meta-item-icon"> <i class="fa fa-calendar-o"> </i> </span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-31T02:06:16+00:00">2018-12-31</time> </span> 
+            <span class="post-wordcount"> <span class="post-meta-divider">•</span> <span class="post-meta-item-icon"> <i class="fa fa-file-word-o"> </i> </span> <span class="post-meta-item-text">字数统计</span> <span title="字数统计">1030</span> </span> 
+            <span id="/2018/" class="leancloud_visitors" data-flag-title="2018 年终总结"> <span class="post-meta-divider">•</span> <span class="post-meta-item-icon"> <i class="fa fa-eye"> </i> </span> <span class="post-meta-item-text">阅读次数</span> <span class="leancloud-visitors-count"> </span> </span> 
+           </div> 
+          </header> 
+          <div class="post-body" itemprop="articleBody"> 
+           <p>2018，无所事事又带点丧的一年，感觉很对不起 23 岁这个年纪，要跟自己说声对不起了</p> 
+           <div class="post-button text-center"> 
+            <a class="btn" href="https://diygod.me/2018/#more" rel="contents">阅读全文 &raquo;</a> 
+           </div> 
+           <p> </p> 
+          </div> 
+          <footer class="post-footer"> 
+          </footer> 
+         </div> 
+        </article> 
+        <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article"> 
+         <div class="post-date"> 
+          <div class="post-month">
+           11月
+          </div> 
+          <div class="post-day">
+           08
+          </div> 
+         </div> 
+         <div class="post-badge"> 
+          <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"> <a href="https://diygod.me/categories/%E5%88%86%E4%BA%AB%E5%A2%83/" itemprop="url" rel="index"> <span itemprop="name">分享境</span> </a> </span> 
+         </div> 
+         <div class="post-block"> 
+          <link itemprop="mainEntityOfPage" href="https://diygod.me/nas/" /> 
+          <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> 
+           <meta itemprop="name" content="DIYgod" /> 
+           <meta itemprop="description" content="" /> 
+           <meta itemprop="image" content="./DIYgod_files/images/DIYgod.jpg" /> </span> 
+          <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"> 
+           <meta itemprop="name" content="Hi, DIYgod" /> </span> 
+          <header class="post-header"> 
+           <h1 class="post-title" itemprop="name headline"> <a class="post-title-link" href="https://diygod.me/nas/" itemprop="url">从零开始的 NAS 生活</a> </h1> 
+           <div class="post-meta"> 
+            <span class="post-time"> <span class="post-meta-item-icon"> <i class="fa fa-calendar-o"> </i> </span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-08T23:40:52+00:00">2018-11-08</time> </span> 
+            <span class="post-wordcount"> <span class="post-meta-divider">•</span> <span class="post-meta-item-icon"> <i class="fa fa-file-word-o"> </i> </span> <span class="post-meta-item-text">字数统计</span> <span title="字数统计">919</span> </span> 
+            <span id="/nas/" class="leancloud_visitors" data-flag-title="从零开始的 NAS 生活"> <span class="post-meta-divider">•</span> <span class="post-meta-item-icon"> <i class="fa fa-eye"> </i> </span> <span class="post-meta-item-text">阅读次数</span> <span class="leancloud-visitors-count"> </span> </span> 
+           </div> 
+          </header> 
+          <div class="post-body" itemprop="articleBody"> 
+           <p>很早就想组一个家庭 NAS 设备，趁着这次双十一，在京东买了一台群晖 DS218play 和一块酷狼 4T 硬盘，已经用了两天了，我的感受是：</p> 
+           <p> <strong>爽爆</strong> </p> 
+           <div class="post-button text-center"> 
+            <a class="btn" href="https://diygod.me/nas/#more" rel="contents">阅读全文</a> 
+           </div> 
+           <p> </p> 
+          </div> 
+          <footer class="post-footer"> 
+          </footer> 
+         </div> 
+        </article> 
+       </section> 
+      </div> 
+     </div> 
+     <div class="sidebar-toggle"> 
+      <div class="sidebar-toggle-line-wrap"> 
+       <span class="sidebar-toggle-line sidebar-toggle-line-first"> </span> 
+       <span class="sidebar-toggle-line sidebar-toggle-line-middle"> </span> 
+       <span class="sidebar-toggle-line sidebar-toggle-line-last"> </span> 
+      </div> 
+     </div> 
+     <aside id="sidebar" class="sidebar"> 
+      <div class="sidebar-inner affix-top"> 
+       <section class="site-overview-wrap sidebar-panel sidebar-panel-active"> 
+        <div class="site-overview" style="max-height: 424px;"> 
+         <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> 
+          <img class="site-author-image" itemprop="image" src="./DIYgod_files/images/card.jpg" alt="DIYgod" /> 
+          <p class="site-author-name" itemprop="name"> <span style="opacity:.2">网红</span>DIYgod</p> 
+          <p class="site-description motion-element" itemprop="description">你能抓到我么？</p> 
+         </div> 
+         <div class="links-of-author motion-element"> 
+          <span class="links-of-author-item"> <a href="https://github.com/DIYgod" target="_blank" title="GitHub" data-balloon="GitHub" data-balloon-pos="up"> <i class="fa fa-fw fa-github"> </i> </a> </span> 
+          <span class="links-of-author-item"> <a href="https://twitter.com/DIYgod" target="_blank" title="Twitter" data-balloon="Twitter" data-balloon-pos="up"> <i class="fa fa-fw fa-twitter"> </i> </a> </span> 
+          <span class="links-of-author-item"> <a href="https://diygod.me/images/qq-g.jpg" target="_blank" title="QQ 群" data-balloon="QQ 群" data-balloon-pos="up"> <i class="fa fa-fw fa-qq"> </i> </a> </span> 
+          <span class="links-of-author-item"> <a href="https://t.me/awesomeDIYgod" target="_blank" title="Telegram 频道" data-balloon="Telegram 频道" data-balloon-pos="up"> <i class="fa fa-fw fa-telegram"> </i> </a> </span> 
+          <span class="links-of-author-item"> <a href="https://t.me/prpr233" target="_blank" title="Telegram 群" data-balloon="Telegram 群" data-balloon-pos="up"> <i class="fa fa-fw fa-telegram"> </i> </a> </span> 
+         </div> 
+         <div class="feed-link motion-element"> 
+          <a class="feed-email" href="http://eepurl.com/dEnzz1" rel="alternate" target="_blank"> <i class="fa fa-envelope"> </i> <span>Email 订阅</span> </a> 
+          <a class="feed-rss" href="https://diygod.me/atom.xml" rel="alternate" target="_blank"> <i class="fa fa-rss"> </i> <span>RSS 订阅</span> </a> 
+         </div> 
+         <nav class="site-state motion-element"> 
+          <div class="site-state-item site-state-posts"> 
+           <a href="https://diygod.me/archives"> <span class="site-state-item-count">52</span> <span class="site-state-item-name">日志</span> </a> 
+          </div> 
+          <div class="site-state-item site-state-categories"> 
+           <a href="https://diygod.me/categories/index.html"> <span class="site-state-item-count">5</span> <span class="site-state-item-name">分类</span> </a> 
+          </div> 
+         </nav> 
+         <div class="cc-license motion-element" itemprop="license"> 
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" target="_blank"> <img src="./DIYgod_files/images/cc-by-nc-sa.png" alt="Creative Commons" /> </a> 
+         </div> 
+        </div> 
+       </section> 
+      </div> 
+     </aside> 
+    </div> 
+   </main> 
+   <footer id="footer" class="footer"> 
+    <div class="footer-image"> 
+    </div> 
+    <div class="footer-inner"> 
+     <p>博客已萌萌哒运行<span id="since"></span> <span class="my-face">(●'◡'●)ﾉ♥</span> </p> 
+     <p>托管于<a href="https://github.com/" target="_blank" rel="nofollow"> GitHub</a>. <a href="https://www.upyun.com/" target="_blank" rel="nofollow">又拍云</a> 提供 CDN 服务. <a href="http://www.google.com/analytics/" target="_blank" rel="nofollow">Google Analytics </a>提供网站统计服务. <a href="https://www.cloudxns.net/" target="_blank" rel="nofollow">CloudXNS </a>提供 DNS 解析服务.</p> 
+     <p>© <span itemprop="copyrightYear">2019</span> Hi, DIYgod. 由 <a href="https://hexo.io/" target="_blank" class="external" rel="nofollow">Hexo</a> 强力驱动. Theme By <a href="https://github.com/DIYgod/hexo-theme-sagiri" target="_blank" class="external" rel="nofollow">Sagiri</a> v0.0.37. <a href="https://diygod.me/sitemap.xml" target="_blank">站点地图</a>. 鲁ICP备16000184号.</p> 
+     <p>Made with <i class="fa fa-heart throb" style="color:#d43f57"> </i> by <span class="author" itemprop="copyrightHolder">DIYgod</span>.</p> 
+    </div> 
+   </footer> 
+   <div class="back-to-top"> 
+    <i class="fa fa-arrow-up"> </i> 
+   </div> 
+   <canvas id="evanyou" width="1366" height="657"> 
+   </canvas> 
+   <div id="aplayer-fixed" class="aplayer aplayer-fixed aplayer-narrow"> 
+    <div class="aplayer-list aplayer-list-hide" style="max-height: 250px"> 
+     <ol style="max-height: 250px"> 
+     </ol> 
+    </div> 
+    <div class="aplayer-lrc"> 
+     <div class="aplayer-lrc-contents" style="transform: translateY(0); -webkit-transform: translateY(0);"></div> 
+    </div> 
+   </div>
+  </div>
+  <script type="text/javascript" src="./DIYgod_files/js/sagiri.min.js"></script>
+  <canvas width="1366" height="657" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
+  <script>var serviceWorkerUri="/sw.js";"serviceWorker"in navigator?navigator.serviceWorker.register(serviceWorkerUri).then(function(){navigator.serviceWorker.controller?console.log("Assets cached by the controlling service worker."):console.log("Please reload this page to allow the service worker to handle network operations.")}).catch(function(e){console.log("ERROR: "+e)}):console.log("Service workers are not supported in the current browser.")</script>   
+ </body>
+</html>
